@@ -3,6 +3,7 @@ import {useDispatch, useSelector} from 'react-redux'
 import {BsPauseFill, BsPlayFill} from 'react-icons/bs'
 import {removePlayerTrack, setPlayerHeight} from '../../actions'
 import {usePrevious} from '../../modules/custom-hooks'
+import './Player.scss';
 
 const Player = () => {
     const [currentTrack, setCurrentTrack] = useState(null)

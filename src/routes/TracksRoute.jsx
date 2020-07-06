@@ -40,7 +40,7 @@ const TracksRoute = ({path}) => {
 
     return (
         <Tracks
-            categoryName = {getContentNameById(playlistId, content.playlists)}
+            categoryName = {getContentNameById(playlistId, content.playlistsS)}
             data = {content.tracks}
             isLoading = {content.status === 'running'}
             path={path}

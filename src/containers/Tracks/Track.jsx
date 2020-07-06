@@ -17,8 +17,9 @@ const Track = ({ track }) => {
             dispatch(removePlayerTrack())
             return
         }
-        setIsPlaying(!isPlaying)
+        
         dispatch(addTrackToPlayer(track))
+        setIsPlaying(!isPlaying)
     }
 
     useEffect(() => {
